@@ -1,0 +1,202 @@
+/* ============================================= */
+/* KSCANDLES — GLOBAL STYLE (merged homepage + shop) */
+/* ============================================= */
+
+/* FONT IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ============================================= */
+/* GLOBAL RESET & BASE */
+/* ============================================= */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /*
+  font-family: 'Inter', sans-serif;*/
+  background: linear-gradient(135deg, #FAF8F5, #f5f1ea);
+  color: #2D2424;
+  overflow-x: hidden;
+  line-height: 1.4;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  color: #2D2424;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #8B7355;
+}
+
+/* ============================================= */
+/* BUTTONS */
+/* ============================================= */
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #8B7355, #C4B5A0);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(139, 115, 85, 0.3);
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #A48F73, #D6C4A6);
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ============================================= */
+/* HERO SECTION */
+/* ============================================= */
+.hero-section {
+  background: linear-gradient(135deg, #C4B5A0, #8B7355);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px 80px;
+  border-radius: 0 0 80px 80px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero-content .highlight {
+  background: linear-gradient(135deg, #fff, #F1E1C6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin-bottom: 25px;
+}
+
+/* ============================================= */
+/* PRODUCT SECTION */
+/* ============================================= */
+.product-section {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #2D2424;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 3px;
+  background: linear-gradient(135deg, #8B7355, #C4B5A0);
+  margin: 12px auto 0;
+  border-radius: 5px;
+}
+
+/* ============================================= */
+/* PRODUCT GRID */
+/* ============================================= */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 10px 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(139, 115, 85, 0.15);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(200, 180, 150, 0.15);
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(139, 115, 85, 0.25);
+}
+
+.product-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  color: #2D2424;
+  margin: 15px 0 6px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #8B7355;
+}
+
+.rating {
+  color: #F1C40F;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+/* Buttons inside product cards */
+.product-card .btn {
+  background: linear-gradient(135deg, #8B7355, #C4B5A0);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.product-card .btn:hover {
+  background: linear-gradient(135deg, #A48F73, #D6C4A6);
+  transform: scale(1.05);
+}
